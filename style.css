@@ -314,7 +314,7 @@ a:hover {
 
 .navbar-brand img[src$="svg"] {
     min-width: 200px;
-    min-height: 45px ;
+    min-height: 45px;
 }
 
 .nav-center .navbar-brand img {
@@ -711,12 +711,12 @@ p {
     flex-direction: row;
     justify-content: space-around;
 }
-.social a{
+.social a {
     display: flex;
     flex-direction: column;
     font-size: 15px;
 }
-.social .fa{
+.social .fa {
     padding-top: 15px;
 }
 
@@ -799,6 +799,7 @@ h4 {
 
 .tc-white {
     color: #fff !important;
+    position: relative;
 }
 
 .btn-atomic-tangerine {
@@ -821,7 +822,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #915a40!important;
+    color: #915a40 !important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -863,24 +864,12 @@ h4 {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 992px) {
     .navbar .nav {
         max-width: 80%;
     }
     .nav-center.navbar .nav {
         max-width: 100%;
-    }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
     }
 }
 
@@ -896,10 +885,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -908,8 +894,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
